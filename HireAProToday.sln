@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireAProToday", "HireAProToday\HireAProToday.csproj", "{60E18BCA-D5F1-4807-AD97-E871B532A241}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{1041216A-8002-415E-9119-1FA31F59C8BE}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{4401D9CB-128D-4962-A2F4-9E75CFE18DD5}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\HireAProToday-WAWS-dev.json = PublishScripts\Configurations\HireAProToday-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60E18BCA-D5F1-4807-AD97-E871B532A241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60E18BCA-D5F1-4807-AD97-E871B532A241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60E18BCA-D5F1-4807-AD97-E871B532A241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60E18BCA-D5F1-4807-AD97-E871B532A241}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4401D9CB-128D-4962-A2F4-9E75CFE18DD5} = {1041216A-8002-415E-9119-1FA31F59C8BE}
+	EndGlobalSection
+EndGlobal
