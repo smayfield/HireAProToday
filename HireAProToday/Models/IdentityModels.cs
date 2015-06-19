@@ -29,5 +29,7 @@ namespace HireAProToday.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<HireAProToday.Models.EventModel> EventModels { get; set; }
     }
 }

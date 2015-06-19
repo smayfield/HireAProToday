@@ -1,64 +1,57 @@
-﻿
+﻿@model IEnumerable<HireAProToday.Models.EventModel>
+
 @{
-    ViewBag.Title = "Upcoming Events";
+    ViewBag.Title = "Index";
 }
 
-<h2>Upcoming Events</h2>
+<h2>Index</h2>
 
 <p>
-    This page will show you the upcoming events.  As an event becomes "old", it will automatically fall off of this
-    page.  That means you'll have to keep new events entered in a timely manner, or eventually it might say "No events found." 
-    when it runs out of upcoming events.
+    @Html.ActionLink("Create New", "Create")
 </p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </th>
+        <th></th>
+    </tr>
 
-<div>
-    <h3>Event Name</h3>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StartDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EndDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
 
-    <div>
-        <p>This is the best event description you'll ever see.  You know you want to sign up.  Go ahead, it's ok.</p>
-        <div>
-            <p>Date: 01/01/15  Time: 5pm-6pm</p>
-            <p><a class="btn btn-default" href="/Events/Signup">Sign Up &raquo;</a></p>
-        </div>
-    </div>
-    
-</div>
-
-<div>
-    <h3>Event Name</h3>
-
-    <div>
-        <p>This is the best event description you'll ever see.  You know you want to sign up.  Go ahead, it's ok.</p>
-        <div>
-            <p>Date: 01/01/15  Time: 5pm-6pm</p>
-            <p><a class="btn btn-default" href="/Events/Signup">Sign Up &raquo;</a></p>
-        </div>
-    </div>
-
-</div>
-
-<div>
-    <h3>Event Name</h3>
-
-    <div>
-        <p>This is the best event description you'll ever see.  You know you want to sign up.  Go ahead, it's ok.</p>
-        <div>
-            <p>Date: 01/01/15  Time: 5pm-6pm</p>
-            <p><a class="btn btn-default" href="/Events/Signup">Sign Up &raquo;</a></p>
-        </div>
-    </div>
-
-</div>
-
-<div>
-    <h3>Event Name</h3>
-
-    <div>
-        <p>This is the best event description you'll ever see.  You know you want to sign up.  Go ahead, it's ok.</p>
-        <div>
-            <p>Date: 01/01/15  Time: 5pm-6pm</p>
-            <p><a class="btn btn-default" href="/Events/Signup">Sign Up &raquo;</a></p>
-        </div>
-    </div>
-
-</div>
+</table>
