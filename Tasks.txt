@@ -1,0 +1,26 @@
+user accounts
+
+directory
+	2 types of members
+	categories can be found in the pdf forms (also emailed)
+		categories are unique per member type
+	membership forms should be online and emailed to renee
+	will build system with members and categories, and admin page to map members to categories
+		renee will do the actual mapping.
+
+advertising
+	setup adwords and give pro gmail account access to it.
+	pull all the existing images down
+	note image rotate on the directory pages
+		renee pointed out that some are from advertisers they don't have paying.
+	setup google adwords
+
+content
+	waiting on jill
+
+site theme
+	renee has some images from projects/events, will send to me
+		probably have to remind her to do it in a few days
+
+photo gallery
+

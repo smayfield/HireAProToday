@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireAProToday", "HireAProToday\HireAProToday.csproj", "{60E18BCA-D5F1-4807-AD97-E871B532A241}"
 EndProject
@@ -14,6 +14,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{4401D9CB-128D-4962-A2F4-9E75CFE18DD5}"
 	ProjectSection(SolutionItems) = preProject
 		PublishScripts\Configurations\HireAProToday-WAWS-dev.json = PublishScripts\Configurations\HireAProToday-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{F95E9CE8-15A3-4709-BB6B-6515013B75CF}"
+	ProjectSection(SolutionItems) = preProject
+		Tasks.txt = Tasks.txt
 	EndProjectSection
 EndProject
 Global
