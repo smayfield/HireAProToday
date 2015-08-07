@@ -183,8 +183,13 @@
     <Compile Include="Migrations\201508070022280_AddDirectory.Designer.cs">
       <DependentUpon>201508070022280_AddDirectory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508070029221_AddDirectoryCategories.cs" />
+    <Compile Include="Migrations\201508070029221_AddDirectoryCategories.Designer.cs">
+      <DependentUpon>201508070029221_AddDirectoryCategories.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\DirectoryCategory.cs" />
     <Compile Include="Models\EventModel.cs" />
     <Compile Include="Models\EventSignupModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -295,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201508070022280_AddDirectory.resx">
       <DependentUpon>201508070022280_AddDirectory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508070029221_AddDirectoryCategories.resx">
+      <DependentUpon>201508070029221_AddDirectoryCategories.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

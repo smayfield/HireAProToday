@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace HireAProToday.Models
 {
@@ -20,6 +21,8 @@ namespace HireAProToday.Models
         public DateTime DateJoined { get; set; }
         public string Url { get; set; }
         public MemberType MemberType { get; set; }
-        public Decimal DuesPaid { get; set; }
+        public decimal DuesPaid { get; set; }
+        public List<DirectoryCategory> Categories { get; set; } 
+
     }
 }

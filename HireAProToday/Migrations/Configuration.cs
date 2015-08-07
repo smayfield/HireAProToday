@@ -7,14 +7,24 @@ namespace HireAProToday.Migrations
 
     internal sealed class Configuration : DbMigrationsConfiguration<HireAProToday.Models.ApplicationDbContext>
     {
+        private readonly bool _pendingMigrations;
+
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
             ContextKey = "HireAProToday.Models.ApplicationDbContext";
+
+            var migrator = new DbMigrator(this);
+            _pendingMigrations = migrator.GetPendingMigrations().Any();
         }
 
         protected override void Seed(HireAProToday.Models.ApplicationDbContext context)
         {
+            if (!_pendingMigrations) return;
+
+            // TODO: load the member directory and any other static database data that's needed...
+            // TODO: how are we going to handle asp.net users and roles? don't want them getting re-set...maybe not a problem...
+
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
