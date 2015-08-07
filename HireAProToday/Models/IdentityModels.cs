@@ -31,5 +31,7 @@ namespace HireAProToday.Models
         }
 
         public System.Data.Entity.DbSet<HireAProToday.Models.EventModel> EventModels { get; set; }
+
+        public System.Data.Entity.DbSet<HireAProToday.Models.Member> Members { get; set; }
     }
 }
