@@ -162,6 +162,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DirectoryCategoriesController.cs" />
     <Compile Include="Controllers\DirectoryController.cs" />
     <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -283,6 +284,11 @@
     <Content Include="Views\Directory\Details.cshtml" />
     <Content Include="Views\Directory\Edit.cshtml" />
     <Content Include="Views\Directory\Index.cshtml" />
+    <Content Include="Views\DirectoryCategories\Create.cshtml" />
+    <Content Include="Views\DirectoryCategories\Delete.cshtml" />
+    <Content Include="Views\DirectoryCategories\Details.cshtml" />
+    <Content Include="Views\DirectoryCategories\Edit.cshtml" />
+    <Content Include="Views\DirectoryCategories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
