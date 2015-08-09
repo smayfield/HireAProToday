@@ -11,6 +11,8 @@ using HireAProToday.Models;
 
 namespace HireAProToday.Controllers
 {
+    // TODO: Add admin role restrictions.
+
     public class DirectoryCategoriesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -115,7 +117,7 @@ namespace HireAProToday.Controllers
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
-
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing)

@@ -11,14 +11,32 @@ using HireAProToday.Models;
 
 namespace HireAProToday.Controllers
 {
+    // TODO: Add admin role restrictions.
+
     public class DirectoryController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Directory
-        public async Task<ActionResult> Index()
+        public async Task<ActionResult> Index(int? categoryId)
         {
-            return View(await db.Members.ToListAsync());
+            // filter by category if specified...
+            List<Member> model;
+            if (categoryId == null)
+            {
+                model = await db.Members.ToListAsync();
+            }
+            else
+            {
+                var category = db.DirectoryCategories.FirstOrDefault(c => c.Id == categoryId);
+                if (category == null)
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                }
+                model = await db.Members.Where(m => m.Categories.Contains(category)).ToListAsync();
+            }
+
+            return View(model);
         }
 
         // GET: Directory/Details/5

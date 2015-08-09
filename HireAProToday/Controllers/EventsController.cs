@@ -11,6 +11,8 @@ using HireAProToday.Models;
 
 namespace HireAProToday.Controllers
 {
+    // TODO: Add admin role restrictions.
+
     public class EventsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
