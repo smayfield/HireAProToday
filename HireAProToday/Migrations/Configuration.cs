@@ -11,7 +11,7 @@ namespace HireAProToday.Migrations
 
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
             ContextKey = "HireAProToday.Models.ApplicationDbContext";
 
             var migrator = new DbMigrator(this);
